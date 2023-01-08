@@ -1,3 +1,9 @@
+/*slope formula
+(x1,y1),(x2,y2),(x3,y3)
+=> (y2-y1) / (x2-x1) = (y3-y1) / (x3-x1)
+=> (y2-y1) * (x3-x1) = (y3-y1) * (x2-x1)
+Then (x1,y1) , (x2,y2) & (x3,y3) are in the same line
+*/
 class Solution 
 {
     public int maxPoints(int[][] points) 
@@ -8,12 +14,12 @@ class Solution
         {
             return n;
         }
-        for(int i=0;i<n;i++)
+        for(int i=0;i<n;i++) //x1,y1
         {
-            for(int j=i+1;j<n;j++)
+            for(int j=i+1;j<n;j++) //x2,y2
             {
                 int temp=2;
-                for(int k=0;k<n;k++)
+                for(int k=0;k<n;k++) //x3,y3
                 {
                     if(k!=i && k!=j)
                     {
