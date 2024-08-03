@@ -1,2 +1,2 @@
 # Leetcode-Solution
-This repo is used for leetcode solutions
+This repo is for leetcode solutions in Java
